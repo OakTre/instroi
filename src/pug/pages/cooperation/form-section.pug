@@ -1,0 +1,22 @@
+section.form-section
+  img.form-section__image(src="assets/images/form-section.jpg" alt="Image" loading="lazy")
+  .site-container.form-section__container
+    .form-section__block
+      h2.form-section__heading
+        | Всегда
+        | на связи
+      form.form-section__form.form
+        .form__group
+          label.form__control-wrapper
+            input.form__control(type="text" name="name" placeholder="Ваше имя")
+          label.form__control-wrapper
+            input.form__control(type="text" name="company" placeholder="Компания")
+          label.form__control-wrapper
+            input.form__control(type="text" name="phone" placeholder="Телефон")
+          label.form__control-wrapper
+            input.form__control(type="text" name="email" placeholder="Email")
+        .form__footer
+          +button('отправить').form__submit
+          p.form__descr
+            | Отправляя данную форму вы соглашаетесь
+            | #[a(href="./") с политикой обработки данных]

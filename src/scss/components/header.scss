@@ -1,0 +1,24 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 123;
+  width: 100%;
+  height: calc(var(--header-height) + var(--header-offset));
+  display: flex;
+  flex-direction: column;
+
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    margin-top: auto;
+  }
+
+  &__nav {
+    margin-left: auto;
+  }
+
+  &__contacts {
+    margin-left: 3rem;
+  }
+}

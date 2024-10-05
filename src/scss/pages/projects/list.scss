@@ -1,0 +1,53 @@
+.projects-list {
+  margin-bottom: 10rem;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 9.2rem;
+    margin-bottom: 4.1rem;
+  }
+
+  &__slider-wrapper {
+    position: relative;
+  }
+
+  &__fake-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: visible;
+
+    .swiper-slide {
+      position: relative;
+      height: 100%;
+
+      &:nth-child(1) {
+        &::before {
+          position: absolute;
+          right: -0.5px;
+          top: -20.9rem;
+          width: 0.5px;
+          height: 1370%;
+          background-color: #FFFFFF4D;
+          content: "";
+        }
+      }
+
+      &:nth-child(3) {
+        &::before {
+          position: absolute;
+          left: -0.5px;
+          top: -20.9rem;
+          width: 0.5px;
+          height: 1370%;
+          background-color: #FFFFFF4D;
+          content: "";
+        }
+      }
+    }
+  }
+}

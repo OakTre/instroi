@@ -1,0 +1,49 @@
+.partners {
+  margin-bottom: 10rem;
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8.4rem;
+  }
+
+  &__heading {
+    font: var(--font-heading);
+    text-transform: uppercase;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 3rem;
+  }
+
+  &__block {
+    grid-column: span 4;
+    min-height: 22.6rem;
+    display: flex;
+    flex-direction: column;
+
+    &:last-child {
+      padding-left: 3rem;
+    }
+  }
+
+  &__image {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    align-self: flex-start;
+  }
+
+  &__descr {
+    margin-top: auto;
+    font: 300 1.2rem/1.4rem var(--main-ff);
+    max-width: 30.6rem;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}

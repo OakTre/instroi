@@ -1,0 +1,33 @@
+.projects {
+  position: relative;
+  margin-bottom: 10rem;
+
+  &::before {
+    position: absolute;
+    top: -7.8rem;
+    left: 0;
+    z-index: 2;
+    height: 7.8rem;
+    width: 100%;
+    background-color: var(--color-bg);
+    clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+    content: "";
+  }
+
+  &__headings {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 9.6rem;
+    margin-bottom: 8.7rem;
+  }
+
+  &__heading {
+    font: var(--font-heading);
+    text-transform: uppercase;
+  }
+
+  &__more-projects {
+    margin-top: 7.1rem;
+  }
+}

@@ -1,0 +1,29 @@
+:root {
+  /* typography  */
+  --main-ff: "Stolzl", sans-serif;
+
+  /* colors */
+  --color-dark: #2F2F30;
+  --color-bg: var(--color-dark);
+  --color-white: #fff;
+  --color-orange: #B36D50;
+  --color-grey: #D9D9D9;
+  --color-grey-600: #99a5b0;
+  --color-grey-300: #eff1f5;
+  --font-body: 300 2rem/2.4rem var(--main-ff);
+  --font-heading: 300 3.5rem/4.2rem var(--main-ff);
+  --font-btn: 300 1.6rem/1.9rem var(--main-ff);
+
+  /* etc */
+  --transition: 200ms ease-in;
+  --paddiong-offset: 40px;
+  --header-height: 5.8rem;
+  --header-offset: 8.1rem;
+}
+
+@import "./helpers/**/*";
+@import "./vendor/**/*";
+@import "./settings/**/*";
+@import "./UI/**/*";
+@import "./components/**/*";
+@import "./pages/**/*";

@@ -1,0 +1,52 @@
+mixin footer()
+  footer.footer
+    .site-container
+      .footer__grid-container
+        .footer__block
+          p.footer__text
+            | 2019−2024 © Интеллигент Строй
+        .footer__block
+          a.footer__text(href="./")
+            | Политика конфиденциальности
+        .footer__block
+          p.footer__text
+            | Меню
+      .footer__grid-container
+        .footer__block.footer__block--is-big
+          a.footer__logo(href="./")
+            img(src="assets/images/great-logo.svg" alt="Company Logo" class="footer__logo-img")
+        .footer__block.footer__block--is-small
+          nav.footer__nav
+            ul.footer__nav-list
+              li.footer__nav-item
+                a.footer__nav-link(href="./")
+                  | Услуги
+              li.footer__nav-item
+                a.footer__nav-link(href="./")
+                  | О компании
+              li.footer__nav-item
+                a.footer__nav-link(href="./")
+                  | Объекты
+              li.footer__nav-item
+                a.footer__nav-link(href="./")
+                  | Сотрудничество
+              li.footer__nav-item
+                a.footer__nav-link(href="./")
+                  | Новости
+      .footer__grid-container
+        .footer__block
+          p.footer__text
+            | Контакты
+          a.footer__link.footer__link--offset-top(href="tel:+7 (843) 598-32-31")
+            | +7 (843) 598-32-31
+          a.footer__link(href="mailto:office@In-stroy.com")
+            | office@In-stroy.com
+
+        .footer__block
+          p.footer__text
+            | Главный офис
+          p.footer__link.footer__link--offset-top
+            adress
+              | Казань, ул. Тихомирнова, д. 1, помещение 1004
+
+

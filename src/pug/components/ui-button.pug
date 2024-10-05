@@ -1,0 +1,5 @@
+mixin button(text, isIcon)
+  button.ui-button&attributes(attributes)
+    span.ui-button__text= text
+    if isIcon
+      span.ui-button__icon

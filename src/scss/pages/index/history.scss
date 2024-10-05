@@ -1,0 +1,49 @@
+.history {
+  margin-bottom: 10rem;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 3rem;
+  }
+
+  &__block {
+    grid-column: 4 span;
+  }
+
+  &__texts {
+    h2 {
+      font: var(--font-heading);
+      margin-bottom: 5.8rem;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin-bottom: 6.7rem;
+      max-width: 33.3rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 4.2rem;
+  }
+
+  &__item-img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+
+  &__item-text {
+    max-width: 20rem;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}

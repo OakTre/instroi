@@ -1,0 +1,24 @@
+mixin header()
+  header.header
+    .site-container.header__container
+      a.logo(href="./")
+        img.logo__img(src="assets/images/logo.svg" alt="Company Logo")
+      nav.nav.header__nav
+        ul.nav__list
+          li.nav__item
+            a(href="./" class="ui-button") услуги
+          li.nav__item
+            a(href="./" class="ui-button") о компании
+          li.nav__item
+            a(href="./" class="ui-button") объекты
+          li.nav__item
+            a(href="./" class="ui-button") сотрудничество
+          li.nav__item
+            a(href="./" class="ui-button") новости
+      a.ui-contacts.header__contacts(href="tel:+7(843)5983231")
+        span.ui-contacts__text-wrapper
+          span.ui-contacts__icon
+          span.ui-contacts__text
+            | контакты
+        span.ui-contacts__tel
+          | +7 (843) 598 32 31
