@@ -1,6 +1,8 @@
 main.page-main.main
-  include intro.pug
-  include history
-  include directions
+  .wrapper(style="position: relative;")
+    +fake-lines()
+    include intro.pug
+    include history
+    include directions
   include projects
   include form-section

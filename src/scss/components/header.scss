@@ -16,6 +16,32 @@
 
   &__nav {
     margin-left: auto;
+
+    ul li a {
+      transition: all var(--transition);
+
+      &.is-hidden {
+        opacity: 0.2;
+      }
+
+      &.is-active {
+        opacity: 1;
+      }
+    }
+
+    .nav__list {
+      &:hover {
+        li a {
+          opacity: 0.2;
+        }
+      }
+    }
+
+    ul li a {
+      &:hover {
+        opacity: 1 !important;
+      }
+    }
   }
 
   &__contacts {

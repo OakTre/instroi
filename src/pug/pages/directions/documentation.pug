@@ -1,0 +1,56 @@
+section.documentation
+  .site-container.main-slider__parent
+    .documentation__header
+      h2.documentation__heading
+        | документация
+      .documentation__nav.main-slider__nav
+        button.main-slider__btn.main-slider__btn--is-prev
+          <svg class="icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 3H39.5" stroke="white" stroke-width="0.5"/>
+            <path d="M38 1L40 3L38 5" stroke="white" stroke-width="0.5"/>
+          </svg>
+        button.main-slider__btn.main-slider__btn--is-next
+          <svg class="icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 3H39.5" stroke="white" stroke-width="0.5"/>
+          <path d="M38 1L40 3L38 5" stroke="white" stroke-width="0.5"/>
+          </svg>
+      .documentation__counts
+        | 01   /   03
+    .documentation__text
+      | Мы обладаем всей необходимой документацией для осуществления деятельности в сфере строительства
+
+    .documentation__slider.swiper
+      .swiper-wrapper
+        .swiper-slide
+          .documentation__card
+            .documentation__block
+              span.documentation__date
+                | 02  /   03   /   2022
+              p.documentation__title
+                | Выписка
+                | из реестра СРО
+              +button('Читать').documentation__link
+            .documentation__block
+              img(src="assets/images/doc1.jpg" alt="Doc" loading="lazy" class="documentation__image")
+        .swiper-slide
+          .documentation__card
+            .documentation__block
+              span.documentation__date
+                | 02  /   03   /   2022
+              p.documentation__title
+                | Выписка
+                | из реестра СРО
+              +button('Читать')
+            .documentation__block
+              img(src="assets/images/doc1.jpg" alt="Doc" loading="lazy" class="documentation__image")
+        .swiper-slide
+          .documentation__card
+            .documentation__block
+              span.documentation__date
+                | 02  /   03   /   2022
+              p.documentation__title
+                | Выписка
+                | из реестра СРО
+              +button('Читать')
+            .documentation__block
+              img(src="assets/images/doc1.jpg" alt="Doc" loading="lazy" class="documentation__image")

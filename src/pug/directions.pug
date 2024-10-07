@@ -1,0 +1,10 @@
+extends layout/default.pug
+
+block variables
+  - const bodyClass = "page-home"
+  - const pageTitle = "Основные направления"
+  - const siteLang = "ru"
+  - const isActive = 'directions'
+
+block content
+  include pages/directions/index

@@ -1,0 +1,65 @@
+.fake-lines {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+
+  .site-container {
+    height: 100%;
+  }
+
+  &__container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 3rem;
+  }
+
+  &__block {
+    position: relative;
+    grid-column: span 4;
+
+    &:nth-child(1) {
+      &::before {
+        position: absolute;
+        right: -0.5px;
+        top: -20.9rem;
+        width: 0.5px;
+        height: 100%;
+        background-color: #FFFFFF4D;
+        content: "";
+      }
+    }
+
+    &:nth-child(3) {
+      &::before {
+        position: absolute;
+        left: -0.5px;
+        top: -20.9rem;
+        width: 0.5px;
+        height: 100%;
+        background-color: #FFFFFF4D;
+        content: "";
+      }
+    }
+  }
+
+  &--is-full-height {
+    .fake-lines__block {
+      &:nth-child(1) {
+        &::before {
+          height: 170%;
+        }
+      }
+
+      &:nth-child(3) {
+        &::before {
+          height: 170%;
+        }
+      }
+    }
+  }
+}

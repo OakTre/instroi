@@ -5,59 +5,72 @@ section.projects.main-slider__parent
         | Реализованные проекты
       .projects__nav.main-slider__nav
         button.main-slider__btn.main-slider__btn--is-prev
-          +icon-mono('arrow-slider')(width="40" height="4")
+          <svg class="icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 3H39.5" stroke="white" stroke-width="0.5"/>
+          <path d="M38 1L40 3L38 5" stroke="white" stroke-width="0.5"/>
+          </svg>
         button.main-slider__btn.main-slider__btn--is-next
-          +icon-mono('arrow-slider')(width="40" height="4")
+          <svg class="icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 3H39.5" stroke="white" stroke-width="0.5"/>
+          <path d="M38 1L40 3L38 5" stroke="white" stroke-width="0.5"/>
+          </svg>
       .projects__counts
         | 01 / 12
-  .projects__list.swiper.main-slider
-    .swiper-wrapper
-      .swiper-slide
-        .slider-card
-          img.slider-card__image(src="assets/images/card-image.jpg" alt="Image" loading="lazy")
-          .slider-card__layer
-          .slider-card__info
-            p.slider-card__text
-              | Санаторий «Золотой колос»
-      .swiper-slide
-        .slider-card
-          img.slider-card__image(src="assets/images/card-image2.jpg" alt="Image" loading="lazy")
-          .slider-card__layer
-          .slider-card__info
-            p.slider-card__text
-              | ОКН «Гостиница Мойнакской
-              | грязелечебницы»
-      .swiper-slide
-        .slider-card
-          img.slider-card__image(src="assets/images/card-image3.jpg" alt="Image" loading="lazy")
-          .slider-card__layer
-          .slider-card__info
-            p.slider-card__text
-              | Детский оздоровительный
-              | комплекс «АК БАРС»
-      .swiper-slide
-        .slider-card
-          img.slider-card__image(src="assets/images/card-image4.jpg" alt="Image" loading="lazy")
-          .slider-card__layer
-          .slider-card__info
-            p.slider-card__text
-              | ГАУЗ «ДРКБ Министерства
-              | здравоохранения РТ»
-      .swiper-slide
-        .slider-card
-          img.slider-card__image(src="assets/images/card-image.jpg" alt="Image" loading="lazy")
-          .slider-card__layer
-          .slider-card__info
-            p.slider-card__text
-              | Детский оздоровительный
-              | комплекс «АК БАРС»
-      .swiper-slide
-        .slider-card
-          img.slider-card__image(src="assets/images/card-image2.jpg" alt="Image" loading="lazy")
-          .slider-card__layer
-          .slider-card__info
-            p.slider-card__text
-              | Санаторий «Золотой колос»
+  .projects__list-wrapper
+    .projects__fake-list
+      .swiper-wrapper
+        .swiper-slide
+        .swiper-slide
+        .swiper-slide
+        .swiper-slide
+    .projects__list.swiper.main-slider
+      .swiper-wrapper
+        .swiper-slide
+          .slider-card
+            img.slider-card__image(src="assets/images/card-image.jpg" alt="Image" loading="lazy")
+            .slider-card__layer
+            .slider-card__info
+              p.slider-card__text
+                | Санаторий «Золотой колос»
+        .swiper-slide
+          .slider-card
+            img.slider-card__image(src="assets/images/card-image2.jpg" alt="Image" loading="lazy")
+            .slider-card__layer
+            .slider-card__info
+              p.slider-card__text
+                | ОКН «Гостиница Мойнакской
+                | грязелечебницы»
+        .swiper-slide
+          .slider-card
+            img.slider-card__image(src="assets/images/card-image3.jpg" alt="Image" loading="lazy")
+            .slider-card__layer
+            .slider-card__info
+              p.slider-card__text
+                | Детский оздоровительный
+                | комплекс «АК БАРС»
+        .swiper-slide
+          .slider-card
+            img.slider-card__image(src="assets/images/card-image4.jpg" alt="Image" loading="lazy")
+            .slider-card__layer
+            .slider-card__info
+              p.slider-card__text
+                | ГАУЗ «ДРКБ Министерства
+                | здравоохранения РТ»
+        .swiper-slide
+          .slider-card
+            img.slider-card__image(src="assets/images/card-image.jpg" alt="Image" loading="lazy")
+            .slider-card__layer
+            .slider-card__info
+              p.slider-card__text
+                | Детский оздоровительный
+                | комплекс «АК БАРС»
+        .swiper-slide
+          .slider-card
+            img.slider-card__image(src="assets/images/card-image2.jpg" alt="Image" loading="lazy")
+            .slider-card__layer
+            .slider-card__info
+              p.slider-card__text
+                | Санаторий «Золотой колос»
 
   .site-container.projects__more-projects
     +button('все проекты', 'icon')

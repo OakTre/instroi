@@ -1,0 +1,49 @@
+.about-project {
+  margin-bottom: 4.8rem;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 3rem;
+  }
+
+  &__block {
+    grid-column: span 6;
+  }
+
+  &__name {
+    font: 350 2.5rem/3rem var(--main-ff);
+    max-width: 42rem;
+    margin-bottom: 10.5rem;
+    color: var(--color-white);
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 4rem;
+  }
+
+  &__text {
+    font: 350 3rem/3.6rem var(--main-ff);
+    margin-bottom: 4rem;
+    color: var(--color-white);
+    max-width: 30rem;
+  }
+
+  &__adress {
+    color: var(--color-white);
+    margin-bottom: 13.3rem;
+    font-weight: 400;
+    max-width: 34rem;
+  }
+
+  &__square {
+    font: 350 10rem/12rem var(--main-ff);
+    color: var(--color-white);
+  }
+
+  &__sub-label {
+    display: block;
+    margin-bottom: 5.6rem;
+  }
+}

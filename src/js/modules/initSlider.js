@@ -21,4 +21,9 @@ export default () => {
       },
     });
   })
+
+  new Swiper('.projects__fake-list', {
+    spaceBetween: 0,
+    slidesPerView: 4
+  });
 };

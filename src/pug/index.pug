@@ -1,9 +1,10 @@
 extends layout/default.pug
 
 block variables
-	- const bodyClass = "page-home"
-	- const pageTitle = "Главная"
-	- const siteLang = "ru"
+  - const bodyClass = "page-home"
+  - const pageTitle = "Главная"
+  - const siteLang = "ru"
+  - const isMain = true
 
 block content
-	include pages/index/index
+  include pages/index/index

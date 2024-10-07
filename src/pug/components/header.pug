@@ -6,15 +6,15 @@ mixin header()
       nav.nav.header__nav
         ul.nav__list
           li.nav__item
-            a(href="./" class="ui-button") услуги
+            a(href="./directions.html" class="ui-button is-hidden" class=isActive === 'directions' ? 'is-active': '') услуги
           li.nav__item
-            a(href="./" class="ui-button") о компании
+            a(href="./" class="ui-button is-hidden") о компании
           li.nav__item
-            a(href="./" class="ui-button") объекты
+            a(href="./projects.html" class="ui-button is-hidden" class=isActive === 'projects' ? 'is-active': '') объекты
           li.nav__item
-            a(href="./" class="ui-button") сотрудничество
+            a(href="./cooperation.html" class="ui-button is-hidden" class=isActive === 'cooperation' ? 'is-active': '') сотрудничество
           li.nav__item
-            a(href="./" class="ui-button") новости
+            a(href="./news.html" class="ui-button is-hidden" class=isActive === 'news' ? 'is-active': '') новости
       a.ui-contacts.header__contacts(href="tel:+7(843)5983231")
         span.ui-contacts__text-wrapper
           span.ui-contacts__icon

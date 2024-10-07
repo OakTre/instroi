@@ -5,6 +5,8 @@ import initModal from './modules/initModal'
 import validation from './modules/validation'
 import initSlider from './modules/initSlider'
 import initProjectsSlider from './modules/initProjectsSlider'
+import initProjectSlider from './modules/initProjectSlider'
+import initDocSlider from './modules/initDocSlider'
 
 documentReady(() => {
   window.inistroi_api = {}
@@ -14,4 +16,6 @@ documentReady(() => {
   validation()
   initSlider()
   initProjectsSlider()
+  initProjectSlider()
+  initDocSlider()
 });

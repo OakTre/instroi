@@ -1,0 +1,40 @@
+.advantages {
+  margin-bottom: 10rem;
+
+  &__heading {
+    font: var(--font-heading);
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+  }
+
+  &__item {
+    border-bottom: 1px solid #FFFFFF4D;
+    padding-top: 3rem;
+    padding-bottom: 3.5rem;
+    min-height: 12.6rem;
+
+    &:nth-child(1) {
+      border-top: 1px solid #FFFFFF4D;
+    }
+
+    .site-container {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__text {
+    max-width: 60rem;
+    font: 300 2.5rem/3rem var(--main-ff);
+  }
+
+  &__image {
+    position: absolute;
+    top: -3rem;
+    right: 0;
+    width: 25rem;
+    height: 12.6rem;
+    object-fit: cover;
+  }
+}
