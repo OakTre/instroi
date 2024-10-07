@@ -12,7 +12,7 @@
     <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <title>Главная | Название сайта</title>
+    <title>Основные направления | Название сайта</title>
     <link rel="stylesheet" href="assets/css/style.min.css?v=0.0.0.0">
   </head>
   <body class="page-home">
@@ -26,7 +26,7 @@
           <nav class="nav header__nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="ui-button is-hidden" href="./directions.html">услуги</a>
+                <a class="ui-button is-hidden is-active" href="./directions.html">услуги</a>
               </li>
               <li class="nav__item">
                 <a class="ui-button is-hidden" href="./">о компании</a>
@@ -49,83 +49,106 @@
       </header>
 
       <main class="page-main main">
-        <div class="wrapper" style="position: relative;">
-          <div class="fake-lines">
-            <div class="site-container">
-              <div class="fake-lines__container">
-                <div class="fake-lines__block"></div>
-                <div class="fake-lines__block"></div>
-                <div class="fake-lines__block"></div>
+        <div class="fake-lines fake-lines--is-full-height">
+          <div class="site-container">
+            <div class="fake-lines__container">
+              <div class="fake-lines__block"></div>
+              <div class="fake-lines__block"></div>
+              <div class="fake-lines__block"></div>
+            </div>
+          </div>
+        </div>
+        <section class="intro intro--variant--is-projects">
+          <div class="intro__bg" style="background-image: url(assets/images/intro-layer5.jpg)"></div>
+          <div class="site-container intro__container">
+            <h1 class="intro__heading">основные направления</h1>
+          </div>
+        </section>
+        <section class="directions-list">
+          <div class="site-container">
+            <div class="directions-list__container">
+              <div class="directions-list__row">
+                <p class="directions-list__text">За годы продуктивной работы мы заработали высокую оценку наших партнеров и вывели основные направления, в которых главной их характеристикой являются качество и четкое соблюдение сроков строительства.</p>
+                <div class="directions-list__item"><span class="directions-list__count">01</span>
+                  <p class="directions-list__sub-text">Инжиниринг</p>
+                </div>
+                <img class="directions-list__image" src="assets/images/directions-list.jpg" alt="Image">
+              </div>
+              <div class="directions-list__row">
+                <div class="directions-list__item"><span class="directions-list__count">02</span>
+                  <p class="directions-list__sub-text">Капитальное строительство</p>
+                </div>
+                <div class="directions-list__item"><span class="directions-list__count">03</span>
+                  <p class="directions-list__sub-text">Дорожное строительство</p>
+                </div>
+                <div class="directions-list__item"><span class="directions-list__count">04</span>
+                  <p class="directions-list__sub-text">Гидротехническое строительство</p>
+                </div>
+              </div>
+              <div class="directions-list__row">
+                <img class="directions-list__image" src="assets/images/directions-list.jpg" alt="Image">
+                <div class="directions-list__item"><span class="directions-list__count">05</span>
+                  <p class="directions-list__sub-text">Реконструкция<br>и реставрация объектов</p>
+                </div>
+              </div>
+              <div class="directions-list__row">
+                <div class="directions-list__item"><span class="directions-list__count">06</span>
+                  <p class="directions-list__sub-text">Ремонтно-отделочные<br>виды работ</p>
+                </div>
+                <button class="ui-button directions-list__link"><span class="ui-button__text">реализованные проекты</span><span class="ui-button__icon"><svg class="icon" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 3H39.5" stroke="var(--color-icon)" stroke-width="0.5"/><path d="M38 1L40 3L38 5" stroke="var(--color-icon)" stroke-width="0.5"/></svg></span>
+                </button>
               </div>
             </div>
           </div>
-          <section class="intro intro--variant--is-fullscreen">
-            <div class="intro__bg" style="background-image: url(assets/images/intro-layer.jpg)"></div>
-            <div class="site-container intro__container">
-              <p class="intro__text">надежный партнер для прогрессивных решений</p>
-              <img class="intro__logo" src="assets/images/great-intro-logo.svg" alt="Company Logo">
-            </div>
-          </section>
-          <section class="history">
-            <div class="site-container">
-              <div class="history__container">
-                <div class="history__block">
-                  <div class="history__texts">
-                    <h2>успешно работаем<br>с 2019 года</h2>
-                    <p>Зарекомендовали себя как надежный партнер, воплощая в жизнь амбициозные идеи архитекторов, инвесторов и девелоперов</p>
-                  </div>
-                </div>
-                <div class="history__block">
-                  <ul class="history__list">
-                    <li class="history__item">
-                      <img class="history__item-img" src="assets/images/history-icon1.svg" alt="Icon" loading="lazy">
-                      <p class="history__item-text">команда профессионалов</p>
-                    </li>
-                    <li class="history__item">
-                      <img class="history__item-img" src="assets/images/history-icon2.svg" alt="Icon" loading="lazy">
-                      <p class="history__item-text">технологичный подход</p>
-                    </li>
-                    <li class="history__item">
-                      <img class="history__item-img" src="assets/images/history-icon3.svg" alt="Icon" loading="lazy">
-                      <p class="history__item-text">собственный парк техники</p>
-                    </li>
-                  </ul>
-                </div>
-                <div class="history__block">
-                  <img class="history__img" src="assets/images/history-img.jpg" loading="lazy" alt="Image">
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="directions">
-            <img class="directions__layer" src="assets/images/directions-layer.jpg" loading="lazy" alt="Image">
-            <img class="directions__layer" src="assets/images/directions-lines.svg" loading="lazy" alt="Lines">
-            <div class="site-container">
-              <div class="directions__container">
-                <div class="directions__block">
-                  <div class="directions__text">
-                    <h2>Основные направления</h2>
-                    <ul>
-                      <li>Капитальное строительство</li>
-                      <li>Реконструкция и реставрация объектов</li>
-                      <li>Дорожное строительство</li>
-                      <li>Гидротехническое строительство</li>
-                      <li>Ремонтно-отделочныевиды работ</li>
-                      <li>Инжиниринг</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="directions__block"></div>
-                <div class="directions__block"></div>
-              </div>
-            </div>
-          </section>
-        </div>
-        <section class="projects main-slider__parent">
+        </section>
+        <section class="advantages">
           <div class="site-container">
-            <div class="projects__headings">
-              <h2 class="projects__heading">Реализованные проекты</h2>
-              <div class="projects__nav main-slider__nav">
+            <h2 class="advantages__heading">преимущества<br>работы с нами</h2>
+          </div>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <div class="site-container">
+                <p class="advantages__text">собственный парк современной строительной спецтехники</p>
+                <img class="advantages__image" src="assets/images/adv1.jpg" alt="Image">
+              </div>
+            </li>
+            <li class="advantages__item">
+              <div class="site-container">
+                <p class="advantages__text">полный штат высококвалифицированных специалистов</p>
+                <img class="advantages__image" src="assets/images/adv1.jpg" alt="Image">
+              </div>
+            </li>
+            <li class="advantages__item">
+              <div class="site-container">
+                <p class="advantages__text">опыт работы со сложными, крупными и срочными проектами</p>
+                <img class="advantages__image" src="assets/images/adv1.jpg" alt="Image">
+              </div>
+            </li>
+            <li class="advantages__item">
+              <div class="site-container">
+                <p class="advantages__text">выполнение гос. заказов, работа в качестве генерального подрядчика</p>
+                <img class="advantages__image" src="assets/images/adv1.jpg" alt="Image">
+              </div>
+            </li>
+            <li class="advantages__item">
+              <div class="site-container">
+                <p class="advantages__text">строгое исполнение всех договорных обязательства</p>
+                <img class="advantages__image" src="assets/images/adv1.jpg" alt="Image">
+              </div>
+            </li>
+            <li class="advantages__item">
+              <div class="site-container">
+                <p class="advantages__text">наличие необходимых допусков СРО</p>
+                <img class="advantages__image" src="assets/images/adv1.jpg" alt="Image">
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="documentation">
+          <div class="site-container main-slider__parent">
+            <div class="documentation__header">
+              <h2 class="documentation__heading">документация</h2>
+              <div class="documentation__nav main-slider__nav">
                 <button class="main-slider__btn main-slider__btn--is-prev">
                   <svg class="icon" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 3H39.5" stroke="white" stroke-width="0.5" />
@@ -139,80 +162,49 @@
                   </svg>
                 </button>
               </div>
-              <div class="projects__counts">01 / 12</div>
+              <div class="documentation__counts">01 / 03</div>
             </div>
-          </div>
-          <div class="projects__list-wrapper">
-            <div class="projects__fake-list">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-              </div>
-            </div>
-            <div class="projects__list swiper main-slider">
+            <div class="documentation__text">Мы обладаем всей необходимой документацией для осуществления деятельности в сфере строительства</div>
+            <div class="documentation__slider swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div class="slider-card">
-                    <img class="slider-card__image" src="assets/images/card-image.jpg" alt="Image" loading="lazy">
-                    <div class="slider-card__layer"></div>
-                    <div class="slider-card__info">
-                      <p class="slider-card__text">Санаторий «Золотой колос»</p>
+                  <div class="documentation__card">
+                    <div class="documentation__block"><span class="documentation__date">02 / 03 / 2022</span>
+                      <p class="documentation__title">Выписка из реестра СРО</p>
+                      <button class="ui-button documentation__link"><span class="ui-button__text">Читать</span>
+                      </button>
+                    </div>
+                    <div class="documentation__block">
+                      <img class="documentation__image" src="assets/images/doc1.jpg" alt="Doc" loading="lazy">
                     </div>
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="slider-card">
-                    <img class="slider-card__image" src="assets/images/card-image2.jpg" alt="Image" loading="lazy">
-                    <div class="slider-card__layer"></div>
-                    <div class="slider-card__info">
-                      <p class="slider-card__text">ОКН «Гостиница Мойнакской грязелечебницы»</p>
+                  <div class="documentation__card">
+                    <div class="documentation__block"><span class="documentation__date">02 / 03 / 2022</span>
+                      <p class="documentation__title">Выписка из реестра СРО</p>
+                      <button class="ui-button"><span class="ui-button__text">Читать</span>
+                      </button>
+                    </div>
+                    <div class="documentation__block">
+                      <img class="documentation__image" src="assets/images/doc1.jpg" alt="Doc" loading="lazy">
                     </div>
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="slider-card">
-                    <img class="slider-card__image" src="assets/images/card-image3.jpg" alt="Image" loading="lazy">
-                    <div class="slider-card__layer"></div>
-                    <div class="slider-card__info">
-                      <p class="slider-card__text">Детский оздоровительный комплекс «АК БАРС»</p>
+                  <div class="documentation__card">
+                    <div class="documentation__block"><span class="documentation__date">02 / 03 / 2022</span>
+                      <p class="documentation__title">Выписка из реестра СРО</p>
+                      <button class="ui-button"><span class="ui-button__text">Читать</span>
+                      </button>
                     </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="slider-card">
-                    <img class="slider-card__image" src="assets/images/card-image4.jpg" alt="Image" loading="lazy">
-                    <div class="slider-card__layer"></div>
-                    <div class="slider-card__info">
-                      <p class="slider-card__text">ГАУЗ «ДРКБ Министерства здравоохранения РТ»</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="slider-card">
-                    <img class="slider-card__image" src="assets/images/card-image.jpg" alt="Image" loading="lazy">
-                    <div class="slider-card__layer"></div>
-                    <div class="slider-card__info">
-                      <p class="slider-card__text">Детский оздоровительный комплекс «АК БАРС»</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="slider-card">
-                    <img class="slider-card__image" src="assets/images/card-image2.jpg" alt="Image" loading="lazy">
-                    <div class="slider-card__layer"></div>
-                    <div class="slider-card__info">
-                      <p class="slider-card__text">Санаторий «Золотой колос»</p>
+                    <div class="documentation__block">
+                      <img class="documentation__image" src="assets/images/doc1.jpg" alt="Doc" loading="lazy">
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="site-container projects__more-projects">
-            <button class="ui-button"><span class="ui-button__text">все проекты</span><span class="ui-button__icon"><svg class="icon" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 3H39.5" stroke="var(--color-icon)" stroke-width="0.5"/><path d="M38 1L40 3L38 5" stroke="var(--color-icon)" stroke-width="0.5"/></svg></span>
-            </button>
           </div>
         </section>
         <section class="form-section">

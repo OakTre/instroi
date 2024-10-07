@@ -12,7 +12,7 @@
     <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <title>Объекты | Название сайта</title>
+    <title>Объекты - детальная | Название сайта</title>
     <link rel="stylesheet" href="assets/css/style.min.css?v=0.0.0.0">
   </head>
   <body class="page-home">
@@ -49,17 +49,57 @@
       </header>
 
       <main class="page-main main">
+        <div class="fake-lines fake-lines--is-full-height">
+          <div class="site-container">
+            <div class="fake-lines__container">
+              <div class="fake-lines__block"></div>
+              <div class="fake-lines__block"></div>
+              <div class="fake-lines__block"></div>
+            </div>
+          </div>
+        </div>
         <section class="intro intro--variant--is-projects">
-          <div class="intro__bg" style="background-image: url(assets/images/intro-layer2.jpg)"></div>
-          <div class="site-container intro__container">
-            <p class="intro__text">Вне зависимости от сложности поставленных перед нами задач, все проекты выполнены качественно и сданы в срок</p>
-            <h1 class="intro__heading">объекты</h1>
+          <div class="intro__bg" style="background-image: url(assets/images/intro-layer4.jpg)"></div>
+          <div class="site-container intro__container"></div>
+        </section>
+        <section class="about-project">
+          <div class="site-container">
+            <div class="about-project__container">
+              <div class="about-project__block">
+                <p class="about-project__name">Административный корпус ОКН «Гостиница Мойнакской грязелечебницы»</p><span class="about-project__label">Заказчик:</span>
+                <p class="about-project__text">ГУП «Татинвест- гражданпроект»</p><span class="about-project__label">Виды работ:</span>
+                <p class="about-project__text">Капитальный ремонт</p><span class="about-project__label">Год:</span>
+                <p class="about-project__text">2024</p>
+              </div>
+              <div class="about-project__block"><span class="about-project__label">Год:</span>
+                <p class="about-project__adress">Евпатория, ул. Франко, дом 30, литер «А», корпус №1</p>
+                <p class="about-project__square">2 200 м2</p><span class="about-project__sub-label">общая площадь</span>
+                <p class="about-project__square">410 млн ₽</p><span class="about-project__sub-label">стоимость проекта</span>
+              </div>
+            </div>
           </div>
         </section>
-        <section class="projects-list main-slider__parent">
-          <div class="site-container projects-list__container">
-            <div class="projects-list__header"><span class="projects-list__count">01 / 12</span>
-              <div class="projects-list__nav main-slider__nav">
+        <section class="project-slider">
+          <div class="site-container main-slider__parent">
+            <div class="swiper project-slider__container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="project-slider__image" src="assets/images/intro-layer1.jpg" alt="Image" loading="lazy">
+                </div>
+                <div class="swiper-slide">
+                  <img class="project-slider__image" src="assets/images/intro-layer2.jpg" alt="Image" loading="lazy">
+                </div>
+                <div class="swiper-slide">
+                  <img class="project-slider__image" src="assets/images/intro-layer3.jpg" alt="Image" loading="lazy">
+                </div>
+                <div class="swiper-slide">
+                  <img class="project-slider__image" src="assets/images/intro-layer4.jpg" alt="Image" loading="lazy">
+                </div>
+              </div>
+            </div>
+            <div class="project-slider__nav">
+              <div class="project-slider__counts">01 / 12</div>
+              <div class="main-slider__nav">
                 <button class="main-slider__btn main-slider__btn--is-prev">
                   <svg class="icon" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 3H39.5" stroke="white" stroke-width="0.5" />
@@ -73,94 +113,6 @@
                   </svg>
                 </button>
               </div>
-            </div>
-            <div class="projects-list__slider-wrapper">
-              <div class="projects-list__fake-slider swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide"></div>
-                  <div class="swiper-slide"></div>
-                  <div class="swiper-slide"></div>
-                </div>
-              </div>
-              <div class="projects-list__slider swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <article class="project-card">
-                      <img class="project-card__image" src="assets/images/project-card-img.jpg" alt="Image" loading="lazy">
-                      <p class="project-card__text">
-                        <a href="./projects-detail.html">ГАУЗ «ДРКБ Министерства здравоохранения РТ»</a>
-                      </p>
-                      <adress class="project-card__adress">г. Казань, 2021</adress>
-                    </article>
-                  </div>
-                  <div class="swiper-slide">
-                    <article class="project-card">
-                      <img class="project-card__image" src="assets/images/project-card-img.jpg" alt="Image" loading="lazy">
-                      <p class="project-card__text">
-                        <a href="./projects-detail.html">ГАУЗ «ДРКБ Министерства здравоохранения РТ»</a>
-                      </p>
-                      <adress class="project-card__adress">г. Казань, 2021</adress>
-                    </article>
-                  </div>
-                  <div class="swiper-slide">
-                    <article class="project-card">
-                      <img class="project-card__image" src="assets/images/project-card-img.jpg" alt="Image" loading="lazy">
-                      <p class="project-card__text">
-                        <a href="./projects-detail.html">ГАУЗ «ДРКБ Министерства здравоохранения РТ»</a>
-                      </p>
-                      <adress class="project-card__adress">г. Казань, 2021</adress>
-                    </article>
-                  </div>
-                  <div class="swiper-slide">
-                    <article class="project-card">
-                      <img class="project-card__image" src="assets/images/project-card-img.jpg" alt="Image" loading="lazy">
-                      <p class="project-card__text">
-                        <a href="./projects-detail.html">ГАУЗ «ДРКБ Министерства здравоохранения РТ»</a>
-                      </p>
-                      <adress class="project-card__adress">г. Казань, 2021</adress>
-                    </article>
-                  </div>
-                  <div class="swiper-slide">
-                    <article class="project-card">
-                      <img class="project-card__image" src="assets/images/project-card-img.jpg" alt="Image" loading="lazy">
-                      <p class="project-card__text">
-                        <a href="./projects-detail.html">ГАУЗ «ДРКБ Министерства здравоохранения РТ»</a>
-                      </p>
-                      <adress class="project-card__adress">г. Казань, 2021</adress>
-                    </article>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="form-section">
-          <img class="form-section__image" src="assets/images/form-section.jpg" alt="Image" loading="lazy">
-          <div class="site-container form-section__container">
-            <div class="form-section__block">
-              <h2 class="form-section__heading">Всегда на связи</h2>
-              <form class="form-section__form form">
-                <div class="form__group">
-                  <label class="form__control-wrapper">
-                    <input class="form__control" type="text" name="name" placeholder="Ваше имя">
-                  </label>
-                  <label class="form__control-wrapper">
-                    <input class="form__control" type="text" name="company" placeholder="Компания">
-                  </label>
-                  <label class="form__control-wrapper">
-                    <input class="form__control" type="text" name="phone" placeholder="Телефон">
-                  </label>
-                  <label class="form__control-wrapper">
-                    <input class="form__control" type="text" name="email" placeholder="Email">
-                  </label>
-                </div>
-                <div class="form__footer">
-                  <button class="ui-button form__submit"><span class="ui-button__text">отправить</span>
-                  </button>
-                  <p class="form__descr">Отправляя данную форму вы соглашаетесь<a href="./">с политикой обработки данных</a>
-                  </p>
-                </div>
-              </form>
             </div>
           </div>
         </section>
