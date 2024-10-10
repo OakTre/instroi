@@ -1,6 +1,16 @@
 .directions-list {
   margin-bottom: 10rem;
 
+  @include mq(sm) {
+    margin-bottom: 5rem;
+  }
+
+  &__container {
+    @include mq(md) {
+      display: none;
+    }
+  }
+
   &__row {
     display: flex;
 
@@ -34,6 +44,15 @@
 
   &__text {
     max-width: 40rem;
+
+    &--is-mobile {
+      display: none;
+
+      @include mq(md) {
+        display: block;
+        margin-bottom: 4rem;
+      }
+    }
   }
 
   &__item {
@@ -41,6 +60,12 @@
     display: flex;
     gap: 2rem;
     padding-left: 8.6rem;
+
+    @include mq(md) {
+      padding-left: 0;
+      flex-direction: column;
+      gap: 0;
+    }
   }
 
   &__count {
@@ -52,18 +77,44 @@
     font-size: 5rem;
     line-height: 1;
     color: var(--color-orange);
+
+    @include mq(md) {
+      position: static;
+      font-size: 3rem;
+      line-height: 1;
+    }
+
+    @include mq(sm) {
+      font: var(--font-body);
+      font-weight: 350;
+    }
   }
 
   &__sub-text {
     font-size: 2.5rem;
     line-height: 3rem;
     font-weight: 400;
+
+    @include mq(md) {
+      font-size: 1.8rem;
+      line-height: 2rem;
+    }
+
+    @include mq(sm) {
+      font: var(--font-body);
+      font-weight: 350;
+    }
   }
 
   &__image {
     width: 20rem;
     height: 20rem;
     object-fit: cover;
+
+    @include mq(md) {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   &__link {
@@ -76,5 +127,35 @@
     &:hover {
       border-color: var(--color-white);
     }
+
+    &--is-mobile {
+      display: none;
+
+      @include mq(md) {
+        display: inline-flex;
+        margin-top: 3.2rem;
+      }
+    }
+  }
+
+  &__mobile-row {
+    display: none;
+    margin-bottom: 3rem;
+
+    &:nth-child(3) {
+      margin-bottom: 0;
+    }
+
+    @include mq(md) {
+      display: flex;
+      gap: 3rem;
+    }
+  }
+
+  &__block {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 }

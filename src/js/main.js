@@ -15,7 +15,7 @@ documentReady(() => {
   // initModal()
   validation()
   initSlider()
-  initProjectsSlider()
+  // initProjectsSlider()
   initProjectSlider()
   initDocSlider()
 });

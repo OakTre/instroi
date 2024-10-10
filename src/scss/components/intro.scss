@@ -35,12 +35,20 @@
     justify-content: flex-end;
     padding-bottom: 10rem;
     flex-grow: 1;
+
+    @include mq(sm) {
+      padding-bottom: 5rem;
+    }
   }
 
   &__text {
     margin-top: 5rem;
     max-width: 24rem;
     margin-bottom: 5rem;
+
+    @include mq(sm) {
+      margin-bottom: 3rem;
+    }
   }
 
   &__logo {
@@ -55,6 +63,16 @@
     font-weight: 400;
     opacity: 0.5;
     text-transform: uppercase;
+
+    @include mq(md) {
+      font-size: 7rem;
+      line-height: 8rem;
+    }
+
+    @include mq(sm) {
+      font-size: 4rem;
+      line-height: 1;
+    }
   }
 
   &--variant {
@@ -71,5 +89,10 @@
     &--is-fullscreen {
       min-height: 100vh;
     }
+  }
+
+  @include mq(sm) {
+    min-height: 65rem !important;
+    margin-bottom: 5rem;
   }
 }

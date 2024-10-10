@@ -1,10 +1,18 @@
 .advantages {
   margin-bottom: 10rem;
 
+  @include mq(sm) {
+    margin-bottom: 5rem;
+  }
+
   &__heading {
     font: var(--font-heading);
     margin-bottom: 4rem;
     text-transform: uppercase;
+
+    @include mq(sm) {
+      margin-bottom: 2.5rem;
+    }
   }
 
   &__item {
@@ -22,11 +30,21 @@
       display: flex;
       justify-content: space-between;
     }
+
+    @include mq(sm) {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      min-height: 7.3rem;
+    }
   }
 
   &__text {
     max-width: 60rem;
     font: 300 2.5rem/3rem var(--main-ff);
+
+    @include mq(sm) {
+      font: var(--font-body);
+    }
   }
 
   &__image {
@@ -36,5 +54,11 @@
     width: 25rem;
     height: 12.6rem;
     object-fit: cover;
+
+    @include mq(sm) {
+      top: -2rem;
+      width: 14.8rem;
+      height: 7.4rem;
+    }
   }
 }

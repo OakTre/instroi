@@ -27,3 +27,23 @@
 @import "./UI/**/*";
 @import "./components/**/*";
 @import "./pages/**/*";
+
+
+@include mq(md) {
+  :root {
+    --header-height: 4rem;
+    --header-offset: 4.5rem;
+    --font-body: 300 1.6rem/1.9rem var(--main-ff);
+    --font-heading: 300 3rem/3.8rem var(--main-ff);
+  }
+}
+
+@include mq(sm) {
+  :root {
+    --font-body: 300 1.4rem/1.6rem var(--main-ff);
+    --font-heading: 300 2.5rem/3rem var(--main-ff);
+    --paddiong-offset: 10px;
+    --font-btn: 300 1rem/1.2rem var(--main-ff);
+  }
+}
+

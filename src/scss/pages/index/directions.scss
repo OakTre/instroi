@@ -1,6 +1,10 @@
 .directions {
   position: relative;
 
+  @include mq(sm) {
+    overflow: hidden;
+  }
+
   &::after {
     position: absolute;
     top: 0;
@@ -17,12 +21,33 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 3rem;
+
+    @include mq(md) {
+      height: 45rem;
+      display: block;
+    }
   }
 
   &__block {
     grid-column: 4 span;
     display: flex;
     flex-direction: column;
+
+    @include mq(md) {
+      display: none;
+      height: 100%;
+
+      &:nth-child(1) {
+        display: block;
+        width: 50%;
+      }
+    }
+
+    @include mq(sm) {
+      &:nth-child(1) {
+        width: 100%;
+      }
+    }
   }
 
   &__layer {
@@ -61,6 +86,28 @@
           margin-bottom: 0;
         }
       }
+
+      @include mq(sm) {
+        margin-top: auto;
+      }
+    }
+
+    @include mq(md) {
+      background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.0075) -20%, rgba(40, 40, 40, 0.0933904) 75.76%, rgba(255, 255, 255, 0.0075) 123.64%), url("../images/bg-blur.png");;
+      background-repeat: no-repeat;
+      margin-left: calc(-1 * var(--paddiong-offset));
+      padding-left: var(--paddiong-offset);
+      backdrop-filter: blur(3px);
+      padding-top: 4rem;
+      padding-bottom: 5rem;
+      height: 100%;
+    }
+
+    @include mq(sm) {
+      margin: 0 calc(-1 * var(--paddiong-offset));
+      padding: 4rem var(--paddiong-offset) 5rem;
+      display: flex;
+      flex-direction: column;
     }
   }
 }

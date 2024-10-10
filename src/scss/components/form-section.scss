@@ -19,6 +19,11 @@
     height: 100%;
     display: flex;
     justify-content: flex-end;
+
+    @include mq(md) {
+      max-width: 100%;
+      padding: 0;
+    }
   }
 
   &__block {
@@ -27,16 +32,40 @@
     padding: 9.4rem 100% 0 8.4rem;
     backdrop-filter: blur(50px);
     margin-right: -100%;
+
+    @include mq(md) {
+      padding: 3rem;
+      width: 50%;
+      margin-right: 0;
+    }
   }
 
   &__heading {
     font: var(--font-heading);
     margin-bottom: 7.5rem;
+
+    @include mq(md) {
+      margin-bottom: 5rem;
+    }
+
+    @include mq(sm) {
+      font-size: 1.4rem;
+      line-height: 1.6rem;
+      margin-bottom: 1.5rem;
+    }
   }
 
   &__form {
     &.form {
       width: 50rem;
+
+      @include mq(md) {
+        width: auto;
+      }
     }
+  }
+
+  @include mq(md) {
+    height: auto;
   }
 }

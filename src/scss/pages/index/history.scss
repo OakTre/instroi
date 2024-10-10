@@ -1,14 +1,38 @@
 .history {
   margin-bottom: 10rem;
 
+  @include mq(sm) {
+    margin-bottom: 5rem;
+  }
+
   &__container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 3rem;
+
+    @include mq(sm) {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 
   &__block {
     grid-column: 4 span;
+
+    @include mq(md) {
+      grid-column: 6 span;
+
+      &:nth-child(1) {
+        grid-column: span 12;
+      }
+    }
+
+    @include mq(sm) {
+      grid-column: 2 span;
+
+      &:nth-child(1) {
+        grid-column: span 4;
+      }
+    }
   }
 
   &__texts {
@@ -16,11 +40,19 @@
       font: var(--font-heading);
       margin-bottom: 5.8rem;
       text-transform: uppercase;
+
+      @include mq(md) {
+        margin-bottom: 4rem;
+      }
     }
 
     p {
       margin-bottom: 6.7rem;
       max-width: 33.3rem;
+
+      @include mq(md) {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -28,6 +60,17 @@
     display: flex;
     flex-direction: column;
     gap: 4.2rem;
+
+    @include mq(sm) {
+      gap: 5rem;
+    }
+  }
+
+  &__item {
+    @include mq(sm) {
+      display: flex;
+      gap: 2rem;
+    }
   }
 
   &__item-img {
@@ -35,15 +78,30 @@
     height: 5rem;
     object-fit: cover;
     margin-bottom: 1rem;
+
+    @include mq(sm) {
+      width: 3rem;
+      height: 3rem;
+      margin-bottom: 0;
+    }
   }
 
   &__item-text {
     max-width: 20rem;
+
+    @include mq(sm) {
+      font-size: 1rem;
+      line-height: 1.2rem;
+    }
   }
 
   &__img {
     width: 100%;
     height: auto;
     object-fit: cover;
+
+    @include mq(sm) {
+      height: 19.5rem;
+    }
   }
 }

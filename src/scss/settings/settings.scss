@@ -16,6 +16,10 @@ html {
   @include mq("custom", max, 1280) {
     font-size: 8px;
   }
+
+  @include mq(md) {
+    font-size: 10px;
+  }
 }
 
 body {

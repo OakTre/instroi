@@ -16,11 +16,34 @@
     max-width: 42rem;
     margin-bottom: 10.5rem;
     color: var(--color-white);
+
+    @include mq(md) {
+      display: none;
+    }
+
+    &--is-mobile {
+      display: none;
+
+      @include mq(md) {
+        display: block;
+        margin-bottom: 4rem;
+      }
+
+      @include mq(sm) {
+        font: 350 2rem/2.4rem var(--main-ff);
+        margin-bottom: 2rem;
+      }
+    }
   }
 
   &__label {
     display: block;
     margin-bottom: 4rem;
+
+    @include mq(sm) {
+      font: 300 1rem/1 var(--main-ff);
+      margin-bottom: 2rem;
+    }
   }
 
   &__text {
@@ -28,6 +51,19 @@
     margin-bottom: 4rem;
     color: var(--color-white);
     max-width: 30rem;
+
+    &:nth-last-of-type(1) {
+      margin-bottom: 0;
+    }
+
+    @include mq(sm) {
+      font: var(--font-body);
+      margin-bottom: 5.3rem;
+
+      &:nth-child(5) {
+        margin-bottom: 2rem;
+      }
+    }
   }
 
   &__adress {
@@ -35,15 +71,42 @@
     margin-bottom: 13.3rem;
     font-weight: 400;
     max-width: 34rem;
+
+    @include mq(md) {
+      margin-bottom: 5rem;
+    }
+
+    @include mq(sm) {
+      font: var(--font-body);
+      font-weight: 350;
+      margin-bottom: 3rem;
+    }
   }
 
   &__square {
     font: 350 10rem/12rem var(--main-ff);
     color: var(--color-white);
+
+    @include mq(md) {
+      font: 350 6rem/9rem var(--main-ff);
+    }
+
+    @include mq(sm) {
+      font: 350 3rem/1rem var(--main-ff);
+      margin-bottom: 0.6rem;
+    }
   }
 
   &__sub-label {
     display: block;
     margin-bottom: 5.6rem;
+
+    &:nth-last-of-type(1) {
+      margin-bottom: 0;
+    }
+
+    @include mq(sm) {
+      margin-bottom: 4rem;
+    }
   }
 }

@@ -10,6 +10,10 @@
     &:last-child {
       margin-bottom: 0;
     }
+
+    @include mq(sm) {
+      margin-bottom: 0.5rem;
+    }
   }
 
   &__control {
@@ -23,6 +27,13 @@
       color: var(--color-white);
       opacity: 0.5;
     }
+
+    @include mq(sm) {
+      font-size: 0.8rem;
+      line-height: 0.96rem;
+      padding-bottom: 0.6rem;
+      height: auto;
+    }
   }
 
   &__group {
@@ -34,6 +45,17 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 9rem;
+
+    @include mq(md) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.8rem;
+      margin-top: 4rem;
+    }
+
+    @include mq(sm) {
+      margin-top: 1.5rem;
+    }
   }
 
   &__descr {
@@ -45,6 +67,19 @@
 
     a {
       text-decoration: underline;
+    }
+
+    @include mq(sm) {
+      font-size: 0.5rem;
+      line-height: 0.6rem;
+    }
+  }
+
+  &__submit {
+    @include mq(sm) {
+      font-size: 0.8rem;
+      line-height: 0.96rem;
+      padding: 0.4rem 0.7rem;
     }
   }
 }

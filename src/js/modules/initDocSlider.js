@@ -18,5 +18,13 @@ export default () => {
         .closest('.main-slider__parent')
         .querySelector('.main-slider__btn--is-next'),
     },
+    breakpoints: {
+      320: {
+        slidesPerView: 1
+      },
+      768: {
+        slidesPerView: 2
+      }
+    }
   });
 };
