@@ -66,7 +66,9 @@
                   <img class="about-company__icon" src="assets/images/history-icon1.svg" alt="Image" loading="lazy">
                   <p class="about-company__text">масштабные проекты в&nbsp;строительстве</p>
                 </div>
-                <img class="about-company__block-image" src="assets/images/company-history-image.jpg" alt="Image" loading="lazy">
+                <div class="about-company__block-image">
+                  <img src="assets/images/company-history-image.jpg" alt="Image" loading="lazy">
+                </div>
               </div>
               <div class="about-company__mobile-block">
                 <div class="about-company__item">
@@ -110,12 +112,16 @@
                 </ul>
               </div>
               <div class="about-company__block">
-                <img class="about-company__block-image" src="assets/images/company-history-image.jpg" alt="Image" loading="lazy">
+                <div class="about-company__block-image">
+                  <img src="assets/images/company-history-image.jpg" alt="Image" loading="lazy">
+                </div>
               </div>
             </div>
             <div class="about-company__container about-company__container--offset-top">
               <div class="about-company__block">
-                <img class="about-company__block-image about-company__block-image--is-small" src="assets/images/company-history-image1.jpg" alt="Image" loading="lazy">
+                <div class="about-company__block-image about-company__block-image--is-small">
+                  <img src="assets/images/company-history-image1.jpg" alt="Image" loading="lazy">
+                </div>
               </div>
               <div class="about-company__block about-company__block--is-big">
                 <p class="about-company__label">Мы вышли на российский уровень и продолжаем развиваться!</p>
@@ -123,32 +129,84 @@
             </div>
           </div>
         </section>
-        <section class="partners">
+        <section class="partners main-slider__parent">
           <div class="site-container">
             <div class="partners__nav">
               <h2 class="partners__heading">нам доверяют</h2>
-              <button class="ui-button"><span class="ui-button__text">реализованные проекты</span><span class="ui-button__icon"><svg class="icon" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 3H39.5" stroke="var(--color-icon)" stroke-width="0.5"/><path d="M38 1L40 3L38 5" stroke="var(--color-icon)" stroke-width="0.5"/></svg></span>
+              <button class="ui-button partners__btn"><span class="ui-button__text">реализованные проекты</span><span class="ui-button__icon"><svg class="icon" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 3H39.5" stroke="var(--color-icon)" stroke-width="0.5"/><path d="M38 1L40 3L38 5" stroke="var(--color-icon)" stroke-width="0.5"/></svg></span>
               </button>
+              <div class="main-slider__nav">
+                <button class="main-slider__btn main-slider__btn--is-prev">
+                  <svg class="icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 3H39.5" stroke="white" stroke-width="0.5" />
+                    <path d="M38 1L40 3L38 5" stroke="white" stroke-width="0.5" />
+                  </svg>
+                </button>
+                <button class="main-slider__btn main-slider__btn--is-next">
+                  <svg class="icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 3H39.5" stroke="white" stroke-width="0.5" />
+                    <path d="M38 1L40 3L38 5" stroke="white" stroke-width="0.5" />
+                  </svg>
+                </button>
+              </div>
             </div>
             <div class="partners__container">
               <div class="partners__block">
-                <img class="partners__image" src="assets/images/partner.png" alt="Logo" loading="lazy">
-                <p class="partners__descr">
-                  <a href="./">«Восток-С»</a>— динамично развивающаяся инвестиционно-строительная компания, работающая на строительном рынке города Казани с 2005 года.
-                </p>
+                <div class="partners__card">
+                  <img class="partners__image" src="assets/images/partner.png" alt="Logo" loading="lazy">
+                  <p class="partners__descr">
+                    <a href="./">«Восток-С»</a>— динамично развивающаяся инвестиционно-строительная компания, работающая на строительном рынке города Казани с 2005 года.
+                  </p>
+                </div>
               </div>
               <div class="partners__block">
-                <img class="partners__image" src="assets/images/partner1.png" alt="Logo" loading="lazy">
-                <p class="partners__descr">
-                  <a href="./">«Татинвестгражданпроект»</a>— ведущее предприятие республики Татарстан в области градостроительного, архитектурно-строительного проектирования и инженерных изысканий. 
-                </p>
+                <div class="partners__card">
+                  <img class="partners__image" src="assets/images/partner1.png" alt="Logo" loading="lazy">
+                  <p class="partners__descr">
+                    <a href="./">«Татинвестгражданпроект»</a>— ведущее предприятие республики Татарстан в области градостроительного, архитектурно-строительного проектирования и инженерных изысканий. 
+                  </p>
+                </div>
               </div>
               <div class="partners__block">
-                <img class="partners__image" src="assets/images/partner.png" alt="Logo" loading="lazy">
-                <p class="partners__descr">
-                  <a href="./">ООО СК «Алтын Групп»</a>— успешно осуществляет свою деятельность с 2011 года и за это время отлично зарекомендовала себя не только в г. Казани, но и за ее пределами.
-                </p>
+                <div class="partners__card">
+                  <img class="partners__image" src="assets/images/partner.png" alt="Logo" loading="lazy">
+                  <p class="partners__descr">
+                    <a href="./">ООО СК «Алтын Групп»</a>— успешно осуществляет свою деятельность с 2011 года и за это время отлично зарекомендовала себя не только в г. Казани, но и за ее пределами.
+                  </p>
+                </div>
               </div>
+            </div>
+            <div class="swiper partners__slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="partners__card">
+                    <img class="partners__image" src="assets/images/partner.png" alt="Logo" loading="lazy">
+                    <p class="partners__descr">
+                      <a href="./">«Восток-С»</a>— динамично развивающаяся инвестиционно-строительная компания, работающая на строительном рынке города Казани с 2005 года.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="partners__card">
+                    <img class="partners__image" src="assets/images/partner1.png" alt="Logo" loading="lazy">
+                    <p class="partners__descr">
+                      <a href="./">«Татинвестгражданпроект»</a>— ведущее предприятие республики Татарстан в области градостроительного, архитектурно-строительного проектирования и инженерных изысканий. 
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="partners__card">
+                    <img class="partners__image" src="assets/images/partner.png" alt="Logo" loading="lazy">
+                    <p class="partners__descr">
+                      <a href="./">ООО СК «Алтын Групп»</a>— успешно осуществляет свою деятельность с 2011 года и за это время отлично зарекомендовала себя не только в г. Казани, но и за ее пределами.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="partners__btn--is-mobile">
+              <button class="ui-button partners__btn"><span class="ui-button__text">реализованные проекты</span><span class="ui-button__icon"><svg class="icon" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 3H39.5" stroke="var(--color-icon)" stroke-width="0.5"/><path d="M38 1L40 3L38 5" stroke="var(--color-icon)" stroke-width="0.5"/></svg></span>
+              </button>
             </div>
           </div>
         </section>
@@ -157,16 +215,16 @@
           <div class="site-container form-section__container">
             <div class="form-section__block">
               <h2 class="form-section__heading">Всегда на связи</h2>
-              <form class="form-section__form form">
+              <form class="form-section__form form" data-need-validation="data-need-validation">
                 <div class="form__group">
                   <label class="form__control-wrapper">
-                    <input class="form__control" type="text" name="name" placeholder="Ваше имя">
+                    <input class="form__control" type="text" name="name" placeholder="Ваше имя" required="required">
                   </label>
                   <label class="form__control-wrapper">
                     <input class="form__control" type="text" name="company" placeholder="Компания">
                   </label>
                   <label class="form__control-wrapper">
-                    <input class="form__control" type="text" name="phone" placeholder="Телефон">
+                    <input class="form__control" type="text" name="phone" placeholder="Телефон" required="required">
                   </label>
                   <label class="form__control-wrapper">
                     <input class="form__control" type="text" name="email" placeholder="Email">
@@ -175,7 +233,7 @@
                 <div class="form__footer">
                   <button class="ui-button form__submit"><span class="ui-button__text">отправить</span>
                   </button>
-                  <p class="form__descr">Отправляя данную форму вы соглашаетесь<a href="./">с политикой обработки данных</a>
+                  <p class="form__descr">Отправляя данную форму вы соглашаетесь <a href="./">с политикой обработки данных</a>
                   </p>
                 </div>
               </form>
