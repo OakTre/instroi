@@ -42,5 +42,12 @@
     font: var(--font-btn);
     font-weight: 400;
     opacity: 0;
+    transition: opacity var(--transition);
+  }
+
+  &:hover {
+    .ui-contacts__tel {
+      opacity: 1;
+    }
   }
 }

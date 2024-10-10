@@ -3,14 +3,14 @@ import Swiper, { Navigation } from 'swiper/swiper-bundle'
 Swiper.use([Navigation])
 
 export default () => {
-  const sliders = document.querySelectorAll('.projects-list__slider')
+  const sliders = document.querySelectorAll('.partners__slider')
 
   if (sliders.length === 0) return
 
   sliders.forEach(slider => {
     new Swiper(slider, {
       spaceBetween: 30,
-      slidesPerView: 3,
+      slidesPerView: 1,
       navigation: {
         prevEl: slider
           .closest('.main-slider__parent')
@@ -21,9 +21,4 @@ export default () => {
       },
     });
   })
-
-  new Swiper('.projects-list__fake-slider', {
-    spaceBetween: 30,
-    slidesPerView: 3
-  });
 };

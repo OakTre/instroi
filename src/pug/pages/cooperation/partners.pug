@@ -1,22 +1,59 @@
-section.partners
+section.partners.main-slider__parent
   .site-container
     .partners__nav
       h2.partners__heading
         | нам доверяют
-      +button('реализованные проекты', true)
+      +button('реализованные проекты', true).partners__btn
+      .main-slider__nav
+        button.main-slider__btn.main-slider__btn--is-prev
+          <svg class="icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 3H39.5" stroke="white" stroke-width="0.5"/>
+          <path d="M38 1L40 3L38 5" stroke="white" stroke-width="0.5"/>
+          </svg>
+        button.main-slider__btn.main-slider__btn--is-next
+          <svg class="icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 3H39.5" stroke="white" stroke-width="0.5"/>
+          <path d="M38 1L40 3L38 5" stroke="white" stroke-width="0.5"/>
+          </svg>
     .partners__container
       .partners__block
-        img.partners__image(src="assets/images/partner.png" alt="Logo" loading="lazy")
-        p.partners__descr
-          | #[a(href="./") «Восток-С»] — динамично развивающаяся инвестиционно-строительная компания,
-          | работающая на строительном рынке города Казани с 2005 года.
+        .partners__card
+          img.partners__image(src="assets/images/partner.png" alt="Logo" loading="lazy")
+          p.partners__descr
+            | #[a(href="./") «Восток-С»] — динамично развивающаяся инвестиционно-строительная компания,
+            | работающая на строительном рынке города Казани с 2005 года.
       .partners__block
-        img.partners__image(src="assets/images/partner1.png" alt="Logo" loading="lazy")
-        p.partners__descr
-          | #[a(href="./") «Татинвестгражданпроект»] — ведущее предприятие республики Татарстан в
-          | области градостроительного, архитектурно-строительного проектирования и инженерных изысканий. 
+        .partners__card
+          img.partners__image(src="assets/images/partner1.png" alt="Logo" loading="lazy")
+          p.partners__descr
+            | #[a(href="./") «Татинвестгражданпроект»] — ведущее предприятие республики Татарстан в
+            | области градостроительного, архитектурно-строительного проектирования и инженерных изысканий. 
       .partners__block
-        img.partners__image(src="assets/images/partner.png" alt="Logo" loading="lazy")
-        p.partners__descr
-          | #[a(href="./") ООО СК «Алтын Групп»] — успешно осуществляет свою
-          | деятельность с 2011 года и за это время отлично зарекомендовала себя не только в г. Казани, но и за ее пределами.
+        .partners__card
+          img.partners__image(src="assets/images/partner.png" alt="Logo" loading="lazy")
+          p.partners__descr
+            | #[a(href="./") ООО СК «Алтын Групп»] — успешно осуществляет свою
+            | деятельность с 2011 года и за это время отлично зарекомендовала себя не только в г. Казани, но и за ее пределами.
+    .swiper.partners__slider
+      .swiper-wrapper
+        .swiper-slide
+          .partners__card
+            img.partners__image(src="assets/images/partner.png" alt="Logo" loading="lazy")
+            p.partners__descr
+              | #[a(href="./") «Восток-С»] — динамично развивающаяся инвестиционно-строительная компания,
+              | работающая на строительном рынке города Казани с 2005 года.
+        .swiper-slide
+          .partners__card
+            img.partners__image(src="assets/images/partner1.png" alt="Logo" loading="lazy")
+            p.partners__descr
+              | #[a(href="./") «Татинвестгражданпроект»] — ведущее предприятие республики Татарстан в
+              | области градостроительного, архитектурно-строительного проектирования и инженерных изысканий. 
+        .swiper-slide
+          .partners__card
+            img.partners__image(src="assets/images/partner.png" alt="Logo" loading="lazy")
+            p.partners__descr
+              | #[a(href="./") ООО СК «Алтын Групп»] — успешно осуществляет свою
+              | деятельность с 2011 года и за это время отлично зарекомендовала себя не только в г. Казани, но и за ее пределами.
+
+    .partners__btn--is-mobile
+      +button('реализованные проекты', true).partners__btn

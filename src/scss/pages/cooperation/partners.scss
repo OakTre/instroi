@@ -1,11 +1,27 @@
 .partners {
   margin-bottom: 10rem;
 
+  @include mq(sm) {
+    margin-bottom: 5rem;
+  }
+
   &__nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 8.4rem;
+
+    .main-slider__nav {
+      display: none;
+
+      @include mq(md) {
+        display: flex;
+      }
+    }
+
+    @include mq(sm) {
+      margin-bottom: 3rem;
+    }
   }
 
   &__heading {
@@ -17,13 +33,29 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 3rem;
+
+    @include mq(md) {
+      display: none;
+    }
+  }
+
+  &__slider {
+    display: none;
+
+    @include mq(md) {
+      display: block;
+      width: 90%;
+      margin: 0 auto;
+
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+      }
+    }
   }
 
   &__block {
     grid-column: span 4;
-    min-height: 22.6rem;
-    display: flex;
-    flex-direction: column;
 
     &:last-child {
       padding-left: 3rem;
@@ -44,6 +76,34 @@
 
     a {
       text-decoration: underline;
+    }
+  }
+
+  &__card {
+    min-height: 22.6rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__btn {
+    @include mq(md) {
+      display: none;
+    }
+
+    &--is-mobile {
+      display: none;
+
+      @include mq(md) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 3rem;
+
+        .partners__btn {
+          display: inline-flex;
+        }
+      }
     }
   }
 }

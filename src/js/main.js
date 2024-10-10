@@ -4,7 +4,7 @@ import documentReady from './helpers/documentReady'
 import initModal from './modules/initModal'
 import validation from './modules/validation'
 import initSlider from './modules/initSlider'
-import initProjectsSlider from './modules/initProjectsSlider'
+import initPartnersSlider from './modules/initPartnersSlider'
 import initProjectSlider from './modules/initProjectSlider'
 import initDocSlider from './modules/initDocSlider'
 
@@ -15,7 +15,7 @@ documentReady(() => {
   // initModal()
   validation()
   initSlider()
-  // initProjectsSlider()
+  initPartnersSlider()
   initProjectSlider()
   initDocSlider()
 });

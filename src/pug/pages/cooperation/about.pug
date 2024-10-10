@@ -8,7 +8,8 @@ section.about-company
           img.about-company__icon(src="assets/images/history-icon1.svg" alt="Image" loading="lazy")
           p.about-company__text
             | масштабные проекты в&nbsp;строительстве
-        img(src="assets/images/company-history-image.jpg" alt="Image" loading="lazy" class="about-company__block-image")
+        .about-company__block-image
+          img(src="assets/images/company-history-image.jpg" alt="Image" loading="lazy")
       .about-company__mobile-block
         .about-company__item
           img.about-company__icon(src="assets/images/history-icon1.svg" alt="Image" loading="lazy")
@@ -51,15 +52,16 @@ section.about-company
               | выполнение проектов #[br]
               | в срок
       .about-company__block
-          img(src="assets/images/company-history-image.jpg" alt="Image" loading="lazy" class="about-company__block-image")
+        .about-company__block-image
+          img(src="assets/images/company-history-image.jpg" alt="Image" loading="lazy" )
     .about-company__container.about-company__container--offset-top
       .about-company__block
-        img(
-          src="assets/images/company-history-image1.jpg"
-          alt="Image"
-          loading="lazy"
-          class="about-company__block-image about-company__block-image--is-small"
-        )
+        .about-company__block-image.about-company__block-image--is-small
+          img(
+            src="assets/images/company-history-image1.jpg"
+            alt="Image"
+            loading="lazy"
+          )
       .about-company__block.about-company__block--is-big
         p.about-company__label
           | Мы вышли на российский уровень и продолжаем развиваться!
