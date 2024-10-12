@@ -1,0 +1,19 @@
+.team {
+  margin-bottom: 10rem;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 9.3rem;
+  }
+
+  &__heading {
+    font: var(--font-heading);
+    text-transform: uppercase;
+  }
+
+  &__container {
+    position: relative;
+  }
+}

@@ -1,0 +1,57 @@
+.mission {
+  background-image: url("../images/mission-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 10rem;
+
+  &__container {
+    height: 72rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 3rem;
+    padding: 14.5rem 0;
+  }
+
+  &__block {
+    grid-column: span 4;
+  }
+
+  &__square {
+    position: relative;
+    width: calc(100% + 6rem);
+    height: 43rem;
+    background: #2F2F3080;
+    backdrop-filter: blur(12px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.4rem;
+    left: -3rem;
+  }
+
+  &__label {
+    position: relative;
+    font: var(--font-heading);
+    padding-bottom: 8rem;
+    margin-bottom: 8rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    &::before {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      width: 14.3rem;
+      height: 0.1rem;
+      border-bottom: 1px solid #FFFFFF4D;
+      content: "";
+    }
+  }
+
+  &__text {
+    text-align: center;
+  }
+}

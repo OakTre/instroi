@@ -33,8 +33,11 @@ export default () => {
     });
   })
 
-  new Swiper('.projects__fake-list', {
-    spaceBetween: 0,
-    slidesPerView: 4
-  });
+  if (document.querySelector('.projects__fake-list')) {
+    new Swiper('.projects__fake-list', {
+      spaceBetween: 0,
+      slidesPerView: 4
+    });
+  }
+
 };

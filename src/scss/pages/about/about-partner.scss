@@ -1,0 +1,49 @@
+.about-partner {
+  margin-bottom: 10rem;
+
+  &__heading {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 9.1rem;
+    font: var(--font-heading);
+    text-transform: uppercase;
+  }
+
+  &__container {
+    padding: 7.5rem 0 10.5rem;
+    background-image: url("../images/partner-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__grid-container {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+  }
+
+  &__block {
+    padding: 3rem;
+    min-height: 40rem;
+    display: flex;
+    flex-direction: column;
+    background: #2F2F3080;
+    backdrop-filter: blur(18px);
+
+    img {
+      max-height: 10rem;
+      object-fit: contain;
+      align-self: flex-start;
+    }
+
+    p {
+      margin-top: auto;
+      font-size: 1.4rem;
+      line-height: 1;
+
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+}

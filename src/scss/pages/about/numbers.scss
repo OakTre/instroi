@@ -1,0 +1,25 @@
+.numbers {
+  margin-bottom: 10rem;
+
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 3rem;
+  }
+
+  &__block {
+    grid-column: 4 span;
+  }
+
+  &__label {
+    font-size: 19rem;
+    line-height: 22rem;
+    font-weight: 350;
+    display: block;
+  }
+
+  &__text {
+    display: block;
+    max-width: 24rem;
+  }
+}

@@ -7,6 +7,7 @@ import initSlider from './modules/initSlider'
 import initPartnersSlider from './modules/initPartnersSlider'
 import initProjectSlider from './modules/initProjectSlider'
 import initDocSlider from './modules/initDocSlider'
+import initMap from './modules/initMap'
 
 documentReady(() => {
   window.inistroi_api = {}
@@ -18,4 +19,5 @@ documentReady(() => {
   initPartnersSlider()
   initProjectSlider()
   initDocSlider()
+  initMap()
 });
