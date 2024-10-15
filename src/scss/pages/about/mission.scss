@@ -5,12 +5,28 @@
   background-size: cover;
   margin-bottom: 10rem;
 
+  @include mq(sm) {
+    margin-bottom: 5rem;
+  }
+
   &__container {
     height: 72rem;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 3rem;
     padding: 14.5rem 0;
+
+    @include mq(md) {
+      display: flex;
+      max-width: calc(100% - 8rem);
+      margin: 0 auto;
+      height: auto;
+      padding: 10rem 0;
+    }
+
+    @include mq(sm) {
+      max-width: calc(100% - 6rem);
+    }
   }
 
   &__block {
@@ -29,6 +45,10 @@
     justify-content: center;
     padding: 2.4rem;
     left: -3rem;
+
+    @include mq(md) {
+      height: auto;
+    }
   }
 
   &__label {
@@ -48,6 +68,11 @@
       height: 0.1rem;
       border-bottom: 1px solid #FFFFFF4D;
       content: "";
+    }
+
+    @include mq(sm) {
+      margin-bottom: 3rem;
+      padding-bottom: 3rem;
     }
   }
 

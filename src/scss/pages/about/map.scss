@@ -3,6 +3,10 @@
     font: var(--font-heading);
     text-transform: uppercase;
     margin-bottom: 5.5rem;
+
+    @include mq(sm) {
+      margin-bottom: 4rem;
+    }
   }
 
   &__text {
@@ -13,6 +17,11 @@
     position: relative;
     width: 104rem;
     margin: -16rem auto 0;
+
+    @include mq(sm) {
+      width: 57.1rem;
+      margin: -9rem auto 0;
+    }
   }
 
   &__image {
@@ -38,6 +47,13 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+
+    @include mq(sm) {
+      width: 2rem;
+      height: 2rem;
+      font-size: 1rem;
+      line-height: 1;
+    }
   }
 
   &__info {

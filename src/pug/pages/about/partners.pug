@@ -1,8 +1,19 @@
-section.about-partner
+section.about-partner.main-slider__parent
   .site-container
     .about-partner__heading
       h2
         | нам доверяют
+      .main-slider__nav
+        button.main-slider__btn.main-slider__btn--is-prev
+          <svg class="icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 3H39.5" stroke="white" stroke-width="0.5"/>
+          <path d="M38 1L40 3L38 5" stroke="white" stroke-width="0.5"/>
+          </svg>
+        button.main-slider__btn.main-slider__btn--is-next
+          <svg class="icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 3H39.5" stroke="white" stroke-width="0.5"/>
+          <path d="M38 1L40 3L38 5" stroke="white" stroke-width="0.5"/>
+          </svg>
   .about-partner__container
     .site-container
       .about-partner__grid-container
@@ -24,3 +35,26 @@ section.about-partner
           p
             | #[a(href="./") «Восток-С»] — динамично развивающаяся инвестиционно-строительная компания,
             | работающая на строительном рынке города Казани с 2005 года
+      .about-partner__slider.swiper
+        .swiper-wrapper
+          .swiper-slide
+            .about-partner__block
+              img(src="assets/images/partner-white.png" loading="lazy" alt="icon")
+
+              p
+                | #[a(href="./") «Восток-С»] — динамично развивающаяся инвестиционно-строительная компания,
+                | работающая на строительном рынке города Казани с 2005 года
+          .swiper-slide
+            .about-partner__block
+              img(src="assets/images/partner-white.png" loading="lazy" alt="icon")
+
+              p
+                | #[a(href="./") «Восток-С»] — динамично развивающаяся инвестиционно-строительная компания,
+                | работающая на строительном рынке города Казани с 2005 года
+          .swiper-slide
+            .about-partner__block
+              img(src="assets/images/partner-white.png" loading="lazy" alt="icon")
+
+              p
+                | #[a(href="./") «Восток-С»] — динамично развивающаяся инвестиционно-строительная компания,
+                | работающая на строительном рынке города Казани с 2005 года

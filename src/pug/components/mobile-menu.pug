@@ -1,0 +1,25 @@
+mixin mobile-menu()
+  .mobile-menu
+    .site-container
+      .mobile-menu__header
+        a(href="./" class="mobile-menu__logo")
+          img(src="assets/images/logo.svg" alt="Image" loading="lazy")
+        button.mobile-menu__close
+          span
+          span
+
+      nav.mobile-menu__nav
+        ul.mobile-menu__list
+          li
+            a(href="./") Услуги
+          li
+            a(href="./") О компании
+          li
+            a(href="./") Объекты
+          li
+            a(href="./") Сотрудничество
+          li
+            a(href="./") Новости
+      p.mobile-menu__text
+        a(href="tel:+7 (843) 598-32-31") +7 (843) 598-32-31
+        a(href="mailto:office@In-stroy.com") office@In-stroy.com

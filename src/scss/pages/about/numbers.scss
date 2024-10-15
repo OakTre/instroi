@@ -1,10 +1,47 @@
 .numbers {
   margin-bottom: 10rem;
 
+  @include mq(sm) {
+    margin-bottom: 5rem;
+  }
+
   &__row {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 3rem;
+
+    @include mq(md) {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      margin-bottom: 1.5rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:nth-child(2) {
+        .numbers__block {
+          &:last-child {
+            align-self: flex-end;
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        .numbers__block {
+          &:nth-child(2) {
+            align-self: center;
+          }
+        }
+      }
+    }
+  }
+
+  &__year {
+    @include mq(md) {
+      margin-bottom: 1.5rem;
+    }
   }
 
   &__block {
@@ -16,10 +53,28 @@
     line-height: 22rem;
     font-weight: 350;
     display: block;
+
+    @include mq(md) {
+      line-height: 1;
+      font-size: 9rem;
+    }
+
+    @include mq(sm) {
+      font-size: 8rem;
+    }
   }
 
   &__text {
     display: block;
     max-width: 24rem;
+
+    @include mq(md) {
+      font-size: 1.6rem;
+    }
+
+    @include mq(sm) {
+      font-size: 1.4rem;
+      max-width: 17rem;
+    }
   }
 }

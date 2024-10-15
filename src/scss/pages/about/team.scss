@@ -1,11 +1,19 @@
 .team {
   margin-bottom: 10rem;
 
+  @include mq(sm) {
+    margin-bottom: 5rem;
+  }
+
   &__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 9.3rem;
+
+    @include mq(md) {
+      margin-bottom: 5rem;
+    }
   }
 
   &__heading {
@@ -15,5 +23,28 @@
 
   &__container {
     position: relative;
+  }
+
+  &__list {
+    @include mq(sm) {
+      max-width: 70%;
+      margin: 0 auto;
+      overflow: visible;
+
+      .swiper-slide {
+        transition: all var(--transition);
+
+        &:not(.swiper-slide-active) {
+          transform: scale(0.9);
+        }
+      }
+    }
+  }
+
+  .main-slider__nav,
+  .team__counts {
+    @include mq(md) {
+      display: none;
+    }
   }
 }

@@ -1,12 +1,41 @@
 .about-partner {
   margin-bottom: 10rem;
 
+  @include mq(sm) {
+    margin-bottom: 5rem;
+  }
+
   &__heading {
     text-align: center;
     width: 100%;
     margin-bottom: 9.1rem;
     font: var(--font-heading);
     text-transform: uppercase;
+
+    .main-slider__nav {
+      display: none;
+    }
+
+    @include mq(sm) {
+      margin-bottom: 3rem;
+      text-align: left;
+      width: auto;
+      display: flex;
+      justify-content: space-between;
+
+      .main-slider__nav {
+        display: flex;
+      }
+    }
+  }
+
+  &__slider {
+    display: none;
+
+    @include mq(sm) {
+      display: block;
+      width: 90%;
+    }
   }
 
   &__container {
@@ -15,11 +44,19 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    @include mq(sm) {
+      padding: 5rem 0;
+    }
   }
 
   &__grid-container {
     display: grid;
     grid-template-columns: 4fr 4fr 4fr;
+
+    @include mq(sm) {
+      display: none;
+    }
   }
 
   &__block {

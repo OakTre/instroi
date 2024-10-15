@@ -8,6 +8,8 @@ import initPartnersSlider from './modules/initPartnersSlider'
 import initProjectSlider from './modules/initProjectSlider'
 import initDocSlider from './modules/initDocSlider'
 import initMap from './modules/initMap'
+import initAboutPartnerSlider from './modules/initAboutPartnerSlider'
+import initMobileMenu from './modules/initMobileMenu'
 
 documentReady(() => {
   window.inistroi_api = {}
@@ -20,4 +22,6 @@ documentReady(() => {
   initProjectSlider()
   initDocSlider()
   initMap()
+  initAboutPartnerSlider()
+  initMobileMenu()
 });

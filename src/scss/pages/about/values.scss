@@ -1,6 +1,10 @@
 .values {
   margin-bottom: 10rem;
 
+  @include mq(sm) {
+    margin-bottom: 5rem;
+  }
+
   &__heading {
     font: var(--font-heading);
     text-transform: uppercase;
@@ -14,6 +18,14 @@
       height: 100%;
       max-height: 17.7rem;
       overflow: hidden;
+
+      @include mq(md) {
+        max-height: 7.9rem;
+      }
+
+      @include mq(sm) {
+        max-height: 5rem;
+      }
     }
 
     input {
@@ -25,6 +37,10 @@
 
           .values__text {
             padding-bottom: 5.2rem;
+
+            @include mq(md) {
+              padding-bottom: 3.2rem;
+            }
           }
 
           .values__plus {
@@ -43,6 +59,12 @@
     gap: 3rem;
     padding: 7.7rem 0 5.5rem;
     cursor: pointer;
+
+    @include mq(md) {
+      grid-template-columns: 2fr 2fr 2fr;
+      padding: 2rem 0;
+      gap: 1rem;
+    }
   }
 
   &__num {
@@ -50,16 +72,37 @@
     line-height: 1;
     font-weight: 350;
     overflow: hidden;
+
+    @include mq(md) {
+      font-size: 10rem;
+    }
+
+    @include mq(sm) {
+      font-size: 7rem;
+    }
   }
 
   &__block {
     position: relative;
     overflow: hidden;
     max-height: 9.9rem;
+
+    @include mq(md) {
+      max-height: 5.9rem;
+    }
+
+    @include mq(sm) {
+      max-height: 4.1rem;
+    }
   }
 
   &__label {
     font: var(--font-heading);
+
+    @include mq(sm) {
+      font-size: 1.4rem;
+      line-height: 1.6rem;
+    }
   }
 
   &__plus {
@@ -86,6 +129,11 @@
         height: 100%;
         background-color: var(--color-white);
       }
+    }
+
+    @include mq(sm) {
+      width: 1.4rem;
+      height: 1.4rem;
     }
   }
 
