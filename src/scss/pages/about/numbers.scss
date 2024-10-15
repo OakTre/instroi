@@ -39,6 +39,8 @@
   }
 
   &__year {
+    overflow: hidden;
+
     @include mq(md) {
       margin-bottom: 1.5rem;
     }
@@ -46,6 +48,7 @@
 
   &__block {
     grid-column: 4 span;
+    overflow: hidden;
   }
 
   &__label {

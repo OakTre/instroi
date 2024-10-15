@@ -84,3 +84,10 @@
     }
   }
 }
+
+.about-fake-lines {
+  .fake-lines__block:nth-child(1)::before,
+  .fake-lines__block:nth-child(3)::before {
+    height: 105.1%;
+  }
+}

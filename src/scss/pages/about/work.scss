@@ -26,7 +26,9 @@
   }
 
   &__block {
-    grid-column: span 2;
+    @include mq(md) {
+      grid-column: span 2;
+    }
 
     &:last-child {
       @include mq(md) {

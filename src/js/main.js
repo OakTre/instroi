@@ -11,6 +11,8 @@ import initMap from './modules/initMap'
 import initAboutPartnerSlider from './modules/initAboutPartnerSlider'
 import initMobileMenu from './modules/initMobileMenu'
 import initDirectionsSlider from './modules/initDirectionsSlider'
+import initAdvatntagesHoder from "./modules/initAdvatntagesHoder";
+import initNumsAnimation from "./modules/initNumsAnimation";
 
 documentReady(() => {
   window.inistroi_api = {}
@@ -26,4 +28,6 @@ documentReady(() => {
   initAboutPartnerSlider()
   initMobileMenu()
   initDirectionsSlider()
+  initAdvatntagesHoder()
+  initNumsAnimation()
 });

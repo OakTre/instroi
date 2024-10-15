@@ -4,6 +4,13 @@
   display: flex;
   flex-direction: column;
   height: 55rem;
+  overflow: hidden;
+
+  &:hover {
+    .slider-card__image {
+      transform: scale(1.05);
+    }
+  }
 
   &__image {
     position: absolute;
@@ -12,6 +19,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: 300ms;
 
     @include mq(sm) {
       position: static;
