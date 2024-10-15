@@ -10,6 +10,7 @@ import initDocSlider from './modules/initDocSlider'
 import initMap from './modules/initMap'
 import initAboutPartnerSlider from './modules/initAboutPartnerSlider'
 import initMobileMenu from './modules/initMobileMenu'
+import initDirectionsSlider from './modules/initDirectionsSlider'
 
 documentReady(() => {
   window.inistroi_api = {}
@@ -24,4 +25,5 @@ documentReady(() => {
   initMap()
   initAboutPartnerSlider()
   initMobileMenu()
+  initDirectionsSlider()
 });

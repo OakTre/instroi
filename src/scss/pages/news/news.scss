@@ -3,6 +3,11 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 3rem;
+
+    @include mq(xl) {
+      display: block;
+      padding: var(--paddiong-offset);
+    }
   }
 
   &__block {
@@ -31,6 +36,22 @@
         object-fit: cover;
         margin: 1.7rem 0;
       }
+
+      @include mq(xl) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 300;
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    @include mq(sm) {
+      min-height: 0;
+      max-height: 100%;
     }
   }
 
@@ -38,6 +59,11 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 3rem;
+
+    @include mq(sm) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__articles-item {

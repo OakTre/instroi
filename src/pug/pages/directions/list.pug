@@ -3,51 +3,48 @@ section.directions-list
     p.directions-list__text.directions-list__text--is-mobile
       | За годы продуктивной работы мы заработали высокую оценку наших
       | партнеров и вывели основные направления, в которых главной их характеристикой являются качество и четкое соблюдение сроков строительства.
-    .directions-list__mobile-row
-      .directions-list__block
-        .directions-list__image
-          img(src="assets/images/directions-list.jpg" alt="Image")
-      .directions-list__block
-        .directions-list__item
-          span.directions-list__count
-            | 01
-          p.directions-list__sub-text
+    .directions-list__slider.swiper
+      .swiper-wrapper
+        .swiper-slide
+          .directions-list__card
+           img(src="assets/images/directions-list-card.jpg" alt="Images" loading="lazy" class="directions-list__card-img")
+           p.directions-list__card-text
+            span 01
             | Инжиниринг
-        .directions-list__item
-          span.directions-list__count
-            | 02
-          p.directions-list__sub-text
-            | Капитальное
-            | строительство
-        .directions-list__item
-          span.directions-list__count
-            | 03
-          p.directions-list__sub-text
-            | Дорожное строительство
-    .directions-list__mobile-row
-      .directions-list__block
-        .directions-list__item
-          span.directions-list__count
-            | 04
-          p.directions-list__sub-text
-            | Гидротехническое строительство
-        .directions-list__item
-          span.directions-list__count
-            | 05
-          p.directions-list__sub-text
-            | Реконструкция #[br]
-            | и реставрация объектов
-        .directions-list__item
-          span.directions-list__count
-            | 06
-          p.directions-list__sub-text
-            | Ремонтно-отделочные #[br] виды работ
-      .directions-list__block
-        .directions-list__image
-          img(src="assets/images/directions-list.jpg" alt="Image")
+        .swiper-slide
+          .directions-list__card
+            img(src="assets/images/directions-list-card.jpg" alt="Images" loading="lazy" class="directions-list__card-img")
+            p.directions-list__card-text
+              span 02
+              | Капитальное строительство
+        .swiper-slide
+          .directions-list__card
+            img(src="assets/images/directions-list-card.jpg" alt="Images" loading="lazy" class="directions-list__card-img")
+            p.directions-list__card-text
+              span 03
+              | Дорожное
+              | строительство
+        .swiper-slide
+          .directions-list__card
+            img(src="assets/images/directions-list-card.jpg" alt="Images" loading="lazy" class="directions-list__card-img")
+            p.directions-list__card-text
+              span 04
+              | Гидротехническое
+              | строительство
+        .swiper-slide
+          .directions-list__card
+            img(src="assets/images/directions-list-card.jpg" alt="Images" loading="lazy" class="directions-list__card-img")
+            p.directions-list__card-text
+              span 05
+              | Реконструкция и реставрация объектов
+        .swiper-slide
+          .directions-list__card
+            img(src="assets/images/directions-list-card.jpg" alt="Images" loading="lazy" class="directions-list__card-img")
+            p.directions-list__card-text
+              span 06
+              | Ремонтно-отделочные виды работ
 
     +button("реализованные проекты", true).directions-list__link.directions-list__link--is-mobile
-
     .directions-list__container
       .directions-list__row
         p.directions-list__text
