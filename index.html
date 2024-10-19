@@ -13,7 +13,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <title>Главная | Название сайта</title>
-    <link rel="stylesheet" href="assets/css/style.min.css?v=0.0.4.3">
+    <link rel="stylesheet" href="assets/css/style.min.css?v=0.0.4.123">
   </head>
   <body class="page-home">
     <div class="page-wrapper">
@@ -95,11 +95,34 @@
               </div>
             </div>
           </div>
-          <section class="intro intro--variant--is-fullscreen">
-            <div class="intro__bg" style="background-image: url(assets/images/intro-layer.jpg)"></div>
+          <section class="intro intro--variant--is-fullscreen main-slider__parent">
+            <div class="swiper intro-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="intro-slider__image" src="assets/images/intro-layer.jpg" alt="Image" loading="lazy">
+                </div>
+                <div class="swiper-slide">
+                  <video class="intro-slider__image" src="assets/images/vid.mp4" playsinline="true" loop="true" webkit-playsinline="true" autoplay="true" preload="auto" muted="muted"></video>
+                </div>
+              </div>
+            </div>
             <div class="site-container intro__container">
               <p class="intro__text">надежный партнер для прогрессивных решений</p>
               <img class="intro__logo" src="assets/images/great-intro-logo.svg" alt="Company Logo">
+              <div class="intro-slider__nav main-slider__nav">
+                <button class="main-slider__btn main-slider__btn--is-prev">
+                  <svg class="icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 3H39.5" stroke="white" />
+                    <path d="M38 1L40 3L38 5" stroke="white" />
+                  </svg>
+                </button>
+                <button class="main-slider__btn main-slider__btn--is-next">
+                  <svg class="icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 3H39.5" stroke="white" />
+                    <path d="M38 1L40 3L38 5" stroke="white" />
+                  </svg>
+                </button>
+              </div>
             </div>
           </section>
           <section class="history">
@@ -166,14 +189,14 @@
               <div class="projects__nav main-slider__nav">
                 <button class="main-slider__btn main-slider__btn--is-prev">
                   <svg class="icon" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 3H39.5" stroke="white" stroke-width="0.5" />
-                    <path d="M38 1L40 3L38 5" stroke="white" stroke-width="0.5" />
+                    <path d="M0 3H39.5" stroke="white" />
+                    <path d="M38 1L40 3L38 5" stroke="white" />
                   </svg>
                 </button>
                 <button class="main-slider__btn main-slider__btn--is-next">
                   <svg class="icon" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 3H39.5" stroke="white" stroke-width="0.5" />
-                    <path d="M38 1L40 3L38 5" stroke="white" stroke-width="0.5" />
+                    <path d="M0 3H39.5" stroke="white" />
+                    <path d="M38 1L40 3L38 5" stroke="white" />
                   </svg>
                 </button>
               </div>
@@ -255,7 +278,7 @@
             </div>
           </div>
           <div class="site-container projects__more-projects">
-            <button class="ui-button"><span class="ui-button__text">все проекты</span><span class="ui-button__icon"><svg class="icon" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 3H39.5" stroke="var(--color-icon)" stroke-width="0.5"/><path d="M38 1L40 3L38 5" stroke="var(--color-icon)" stroke-width="0.5"/></svg></span>
+            <button class="ui-button"><span class="ui-button__text">все проекты</span><span class="ui-button__icon"><svg class="icon" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 3H39.5" stroke="var(--color-icon)"/><path d="M38 1L40 3L38 5" stroke="var(--color-icon)"/></svg></span>
             </button>
           </div>
         </section>
@@ -359,6 +382,6 @@
     </div>
 
   </body>
-  <script src="assets/js/main.js?v=0.0.4.3"></script>
-  <script src="assets/js/backend.js?v=0.0.4.3"></script>
+  <script src="assets/js/main.js?v=0.0.4.123"></script>
+  <script src="assets/js/backend.js?v=0.0.4.123"></script>
 </html>
