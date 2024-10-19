@@ -1,7 +1,23 @@
-section.intro.intro--variant--is-fullscreen
-  .intro__bg(style="background-image: url(assets/images/intro-layer.jpg)")
+section.intro.intro--variant--is-fullscreen.main-slider__parent
+  .swiper.intro-slider
+    .swiper-wrapper
+      .swiper-slide
+        img.intro-slider__image(src="assets/images/intro-layer.jpg" alt="Image" loading="lazy")
+      .swiper-slide
+        video(src="assets/images/vid.mp4" class="intro-slider__image" playsinline="true" loop="true" webkit-playsinline="true" autoplay="true" preload="auto" muted="muted")
   .site-container.intro__container
     p.intro__text
       | надежный партнер
       | для прогрессивных решений
     img.intro__logo(src="assets/images/great-intro-logo.svg" alt="Company Logo")
+    .intro-slider__nav.main-slider__nav
+      button.main-slider__btn.main-slider__btn--is-prev
+        <svg class="icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 3H39.5" stroke="white"/>
+        <path d="M38 1L40 3L38 5" stroke="white"/>
+        </svg>
+      button.main-slider__btn.main-slider__btn--is-next
+        <svg class="icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 3H39.5" stroke="white"/>
+        <path d="M38 1L40 3L38 5" stroke="white"/>
+        </svg>

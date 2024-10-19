@@ -11,9 +11,7 @@
     position: relative;
     width: 4rem;
     height: 0.5rem;
-    fill: none;
-    stroke: currentColor;
-    opacity: 0.3;
+    opacity: 0.4;
     transition: opacity var(--transition);
 
     &::before {
@@ -32,6 +30,9 @@
     .icon {
       width: 100%;
       height: 100%;
+      stroke-width: 1.5px;
+      fill: none;
+      stroke: currentColor;
     }
 
     &:hover {
