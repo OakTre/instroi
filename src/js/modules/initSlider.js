@@ -1,6 +1,6 @@
-import Swiper, { Navigation } from 'swiper/swiper-bundle'
+import Swiper, { Navigation, Pagination } from 'swiper/swiper-bundle'
 
-Swiper.use([Navigation])
+Swiper.use([Navigation, Pagination])
 
 export default () => {
   const sliders = document.querySelectorAll('.main-slider')
@@ -18,6 +18,15 @@ export default () => {
         nextEl: slider
           .closest('.main-slider__parent')
           .querySelector('.main-slider__btn--is-next'),
+      },
+      pagination: {
+        el: slider
+          .closest('.main-slider__parent')
+          .querySelector('.main-slider__counts'),
+        type: 'custom',
+        renderCustom: function (swiper, current, total) {
+          return current + ' / ' + swiper.slides.length;
+        }
       },
       breakpoints: {
         320: {
